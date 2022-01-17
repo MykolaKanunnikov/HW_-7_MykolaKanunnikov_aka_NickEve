@@ -27,8 +27,7 @@ public class Main {
         }
 
         System.out.print("Search by dates (only such as '2007-12-03' allowed): ");
-        Scanner scan = new Scanner(System.in);
-        String date = scan.next();
+        String date = sc.next();
         try {
             LocalDate searchDate = LocalDate.parse(date);
             if (report.containsKey(searchDate)) {
